@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="df">
+            <h4>Xodimlar ro'yhati</h4>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newWorkerModal">Yangi xodim</button>
+        </div>
+        <table class="table">
+            
+        </table>
+    </div>
+    <div class="modal fade" id="newWorkerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Yangi xodim</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Ism-sharif</label>
+                            <input type="text" class="form-control" id="userName">
+                            <div id="emailHelp" class="form-text">Bu yerga xodimning ism familiyasi kiritilsin</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="userAddress" class="form-label">Yashash manzili</label>
+                            <input type="text" class="form-control" id="userAddress">
+                        </div>
+                        <div class="form-title">Qaysi dasturlash tillarni biladi?</div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="userProg1" value="PHP">
+                            <label class="form-check-label" for="userProg1">PHP</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="userProg2" value="Python">
+                            <label class="form-check-label" for="userProg2">Python</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="userProg3" value="JavaScript">
+                            <label class="form-check-label" for="userProg3">JavaScript</label>
+                        </div>
+                        <select class="form-select mt-3" id="userDepart">
+                            <option selected>Qaysi bo'limga</option>
+                            <option value="Veb ilovalar">Veb ilovalar</option>
+                            <option value="Mobil ilovalar">Mobil ilovalar</option>
+                            <option value="Qo'llab quvvatlash bo'limi">Qo'llab quvvatlash bo'limi</option>
+                            <option value="Menejment bo'limi">Menejment bo'limi</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bekor qilish</button>
+                    <button type="button" class="btn btn-primary" onclick="add()">Saqlash</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
